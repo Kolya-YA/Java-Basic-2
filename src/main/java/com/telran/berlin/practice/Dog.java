@@ -4,12 +4,12 @@ public class Dog {
 
     private String breed;
     private String name;
-    private int age;
+    private byte age;
 
-    public void setDogParams(String newName, String newBreed, int newAge) {
-        name = newName;
-        breed = newBreed;
-        age = newAge;
+    public void setDogParams(String newName, String newBreed, byte newAge) {
+        this.name = newName;
+        this.breed = newBreed;
+        this.age = newAge;
     }
 
     public String getDogParams() {
