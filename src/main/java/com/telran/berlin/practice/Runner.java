@@ -40,6 +40,6 @@ public class Runner {
     }
 
     static void convertorRunner() {
-        Convertor.decToBin();
+        Convertor.calc();
     }
 }

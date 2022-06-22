@@ -6,30 +6,49 @@ import java.util.Scanner;
 
 public class Convertor {
 
-    static void decToBin() {
+    static void calc() {
+        int inputInt;
+        int inputRadix;
+        int targetRadix;
+        int remainder;
+        String answerStr;
         ArrayList<String> answerArr = new ArrayList<>();
-        int a;
-        int calc;
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter decimal integer number: ");
-
+        System.out.print("Enter radix (base) of integer number: ");
         try {
-            a = sc.nextInt();
+            inputRadix = sc.nextInt(10);
         } catch (Exception ex) {
             System.out.println("\nWrong input.");
             return;
         }
 
-        calc = a;
-        while (calc > 0 ) {
-            answerArr.add(String.valueOf(calc % 2));
-            calc = calc / 2;
+        System.out.print("Enter integer number: ");
+        try {
+            inputInt = sc.nextInt(inputRadix);
+        } catch (Exception ex) {
+            System.out.println("\nWrong input.");
+            return;
+        }
+
+        System.out.print("Enter target radix (base): ");
+        try {
+            targetRadix = sc.nextInt(10);
+        } catch (Exception ex) {
+            System.out.println("\nWrong input.");
+            return;
+        }
+
+        remainder = inputInt;
+        while (remainder > 0 ) {
+            answerArr.add(Integer.toString(remainder % targetRadix, targetRadix));
+            remainder = remainder / targetRadix;
         }
 
         Collections.reverse(answerArr);
-
-        System.out.println("\nIt was: " + a);
-        System.out.println("It's in binary form: 0b" + String.join("", answerArr));
+        answerStr = String.join("", answerArr);
+        System.out.println("\nIt was: " + Integer.toString(inputInt, inputRadix).toUpperCase());
+        System.out.println("\nIt was: " + inputInt);
+        System.out.println("It's in new form: " + answerStr.toUpperCase());
     }
 }
