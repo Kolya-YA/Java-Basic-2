@@ -24,9 +24,7 @@ public class Runner {
         cat.setFavoriteFood(new String[]{"fish", "turkey", "cheese"});
         cat.setFriendsList(new String[]{"Oliver", "Lucy", "Willow"});
 
-        System.out.println();
         System.out.println("——— Cat ———");
-
         System.out.println("My cat's name is " + cat.getName() + ".");
         System.out.println("My cat is " + cat.getAge() + " years old.");
         System.out.println("My cat is male is " + cat.getMaleGender() + ".");
@@ -36,8 +34,7 @@ public class Runner {
         System.out.println("My cat's buddies are named: " + cat.getFriendsList() + ".");
     }
 
-    public static void dogRunner() {
-        System.out.println();
+    static void dogRunner() {
         System.out.println("——— Dog ———");
         Dog myDog = new Dog();
         myDog.setDogParams("Cooper", "Bull Terrier", (byte) 3);
