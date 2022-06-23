@@ -1,14 +1,19 @@
-package com.telran.berlin.practice;
+package com.telran.berlin;
+
+import com.telran.berlin.homeworks.Cat;
+import com.telran.berlin.homeworks.Convertor;
+import com.telran.berlin.homeworks.Dog;
+import com.telran.berlin.homeworks.Vars;
 
 public class Runner {
 
-    static void varRunner() {
+    public static void varRunner() {
         System.out.println("——— Variables ———");
         Vars vars = new Vars();
         vars.printAllVars();
     }
 
-    static void catRunner() {
+    public static void catRunner() {
         Cat cat = new Cat();
 
         cat.setName("Loki");
@@ -31,7 +36,7 @@ public class Runner {
         System.out.println("My cat's buddies are named: " + cat.getFriendsList() + ".");
     }
 
-    static void dogRunner() {
+    public static void dogRunner() {
         System.out.println();
         System.out.println("——— Dog ———");
         Dog myDog = new Dog();
