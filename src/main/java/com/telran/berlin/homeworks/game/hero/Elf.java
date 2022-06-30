@@ -1,19 +1,20 @@
 package com.telran.berlin.homeworks.game.hero;
 
-public class Elf {
+import com.telran.berlin.game.constant.Constant;
 
+public class Elf {
     static class Constant {
         static final int ELF_POWER = 8;
         static final String ELF_CHARISMA = "high";
         static final String ELF_MAGIC = "dark";
     }
 
-    private int var;
+    private long id;
     private int name;
     private int height;
     private int weight;
     private int hairColor;
-    private int sex;
+    private int gender;
 
     public int getName() {
         return name;
@@ -32,8 +33,8 @@ public class Elf {
         return hairColor;
     }
 
-    public int getSex() {
-        return sex;
+    public int getGender() {
+        return gender;
     }
 
     public void setHeight(int height) {

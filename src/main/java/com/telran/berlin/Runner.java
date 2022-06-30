@@ -1,5 +1,6 @@
 package com.telran.berlin;
 
+import com.telran.berlin.game.GameMain;
 import com.telran.berlin.homeworks.Cat;
 import com.telran.berlin.homeworks.Convertor;
 import com.telran.berlin.homeworks.Dog;
@@ -43,5 +44,9 @@ public class Runner {
 
     static void convertorRunner() {
         Convertor.calc();
+    }
+
+    static void gameRunner() {
+        GameMain.main();
     }
 }
