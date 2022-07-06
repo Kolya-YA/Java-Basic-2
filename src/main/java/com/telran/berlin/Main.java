@@ -1,6 +1,6 @@
 package com.telran.berlin;
 
-import com.telran.berlin.game.constant.Constant;
+import com.telran.berlin.game.constant.ConsoleColors;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class Main {
         tasks[3] = "— #4 Numbers convertor";
         tasks[4] = "— #5 Elf game";
 
-        System.out.println(Constant.ConsoleColors.WHITE_BRIGHT + "\nJava homeworks!" + Constant.ConsoleColors.RESET);
+        System.out.println(ConsoleColors.WHITE_BRIGHT + "\nJava homeworks!" + ConsoleColors.RESET);
 
         for (String task : tasks) {
             System.out.println(task);
@@ -23,8 +23,9 @@ public class Main {
 
         try {
             Scanner sc = new Scanner(System.in);
-            System.out.print(Constant.ConsoleColors.WHITE_BRIGHT + "Choose task: " + Constant.ConsoleColors.RESET);
+            System.out.print(ConsoleColors.WHITE_BRIGHT + "Choose task: " + ConsoleColors.RESET);
             taskNo = sc.nextInt(10);
+            sc.close();
         } catch (Exception ex) {
             System.out.println("\nWrong task No!");
             System.exit(1);

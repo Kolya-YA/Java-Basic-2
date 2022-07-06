@@ -1,7 +1,5 @@
 package com.telran.berlin.homeworks.game.hero;
 
-import com.telran.berlin.game.constant.Constant;
-
 public class Elf {
     static class Constant {
         static final int ELF_POWER = 8;

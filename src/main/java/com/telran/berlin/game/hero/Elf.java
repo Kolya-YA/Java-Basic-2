@@ -1,20 +1,20 @@
 package com.telran.berlin.game.hero;
 
-import com.telran.berlin.game.constant.Constant;
+import com.telran.berlin.game.constant.ConsoleColors;
 
 import java.util.Random;
 
 public class Elf {
 
-    private final long id;
+    private long id;
     private String name;
     private boolean gender;
     private int level;
     private int fortune;
 
-    private final int power;
-    private final int charisma;
-    private final int magic;
+    private int power;
+    private int charisma;
+    private int magic;
 
     public Elf() {
         this("NoName");
@@ -27,9 +27,9 @@ public class Elf {
         this.gender = rnd.nextBoolean();
         this.level = 0;
         this.fortune = rnd.nextInt(12);
-        this.power = Constant.ELF_POWER;
-        this.charisma = Constant.ELF_CHARISMA;
-        this.magic = Constant.ELF_MAGIC;
+        this.power = com.telran.berlin.game.constant.Elf.ELF_POWER;
+        this.charisma = com.telran.berlin.game.constant.Elf.ELF_CHARISMA;
+        this.magic = com.telran.berlin.game.constant.Elf.ELF_MAGIC;
     }
 
     public String getElfInfo() {
@@ -71,13 +71,25 @@ public class Elf {
     public void upLevel() {
         this.level++;
         System.out.println(
-                Constant.ConsoleColors.WHITE_BRIGHT + "\nWhoo-hoo! " + Constant.ConsoleColors.RESET
-                + Constant.ConsoleColors.GREEN + this.name + Constant.ConsoleColors.RESET
+                ConsoleColors.WHITE_BRIGHT + "\nWhoo-hoo! " + ConsoleColors.RESET
+                + ConsoleColors.GREEN + this.name + ConsoleColors.RESET
                 + " is getting a new level: " + this.level
         );
     }
 
     public void setFortune(int fortune) {
         this.fortune = fortune;
+    }
+
+    public void setPower(int power) {
+        this.power = power;
+    }
+
+    public void setCharisma(int charisma) {
+        this.charisma = charisma;
+    }
+
+    public void setMagic(int magic) {
+        this.magic = magic;
     }
 }

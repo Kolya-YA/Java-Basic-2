@@ -1,25 +1,6 @@
 package com.telran.berlin.game.constant;
 
-public class Constant {
-    public static final int ELF_POWER = 4;
-    public static final int ELF_CHARISMA = 3;
-    public static final int ELF_MAGIC = 5;
-
-//    public static final String ELF_NAMES = """
-//        Kreacher (from Harry Potter)
-//        Gimbel (the name of the store in Elf)
-//        Winky (from Harry Potter)
-//        Buddy (from Elf)
-//        Dobby (from Harry Potter)
-//        Bernard (from Santa Clause)
-//        Hermey (from Rudolph the Red Nosed Reindeer)
-//        Bing (from The Great Santa Claus Switch)
-//        Hoppity (from The Great Santa Claus Switch)
-//        Zippity (from The Great Santa Claus Switch)
-//        Arwen (from The Lord of the Rings)
-//        Elrond (from The Lord of the Rings)
-//        """;
-    public static class ConsoleColors {
+    public class ConsoleColors {
         // Reset
         public static final String RESET = "\033[0m";  // Text Reset
 
@@ -93,6 +74,3 @@ public class Constant {
         public static final String CYAN_BACKGROUND_BRIGHT = "\033[0;106m";  // CYAN
         public static final String WHITE_BACKGROUND_BRIGHT = "\033[0;107m";   // WHITE
     }
-
-}
-
