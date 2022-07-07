@@ -2,8 +2,6 @@ package com.telran.berlin.homeworks;
 
 import com.telran.berlin.Main;
 
-import java.util.Scanner;
-
 public class TwoDigitCalc {
     public static void main() {
         final int BEST_FIRST = 500;
@@ -28,10 +26,10 @@ public class TwoDigitCalc {
 
         System.out.print("\nPlease enter " + intWord + " number: ");
 
-        if (Main.SCANNER.hasNextInt()) {
-            return Main.SCANNER.nextInt();
+        if (Main.scanner.hasNextInt()) {
+            return Main.scanner.nextInt();
         } else {
-            Main.SCANNER.next();
+            Main.scanner.next();
             System.out.println("You entered the wrong number, but I know a better number for this case.\nThis is: " + bestInt);
             return bestInt;
         }

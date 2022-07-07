@@ -5,7 +5,7 @@ import com.telran.berlin.game.constant.ConsoleColors;
 import java.util.Scanner;
 
 public class Main {
-    public static final Scanner SCANNER = new Scanner(System.in);
+    public static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         int taskNo;
         String[] tasks = new String[6];
@@ -26,7 +26,7 @@ public class Main {
         try {
 //            Scanner sc = new Scanner(System.in);
             System.out.print(ConsoleColors.WHITE_BRIGHT + "Choose task: " + ConsoleColors.RESET);
-            taskNo = SCANNER.nextInt(10);
+            taskNo = scanner.nextInt(10);
 //            sc.close();
         } catch (Exception ex) {
             System.out.println("\nWrong task No!");

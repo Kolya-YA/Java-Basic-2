@@ -43,7 +43,7 @@ public class Convertor {
         System.out.print(enterStr + " ");
 
         try {
-            return Main.SCANNER.nextInt(inputRadix);
+            return Main.scanner.nextInt(inputRadix);
         } catch (Exception ex) {
             System.out.println("\n" + errorStr);
             System.exit(1);
