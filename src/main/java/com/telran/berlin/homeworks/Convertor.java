@@ -1,5 +1,7 @@
 package com.telran.berlin.homeworks;
 
+import com.telran.berlin.Main;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
@@ -37,12 +39,11 @@ public class Convertor {
     }
 
     private static int intInput(int inputRadix, String enterStr, String errorStr) {
-        Scanner sc = new Scanner(System.in);
 
         System.out.print(enterStr + " ");
 
         try {
-            return sc.nextInt(inputRadix);
+            return Main.SCANNER.nextInt(inputRadix);
         } catch (Exception ex) {
             System.out.println("\n" + errorStr);
             System.exit(1);

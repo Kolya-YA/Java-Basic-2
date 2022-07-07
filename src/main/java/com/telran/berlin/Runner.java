@@ -1,10 +1,7 @@
 package com.telran.berlin;
 
 import com.telran.berlin.game.GameMain;
-import com.telran.berlin.homeworks.Cat;
-import com.telran.berlin.homeworks.Convertor;
-import com.telran.berlin.homeworks.Dog;
-import com.telran.berlin.homeworks.Vars;
+import com.telran.berlin.homeworks.*;
 
 public class Runner {
 
@@ -48,5 +45,9 @@ public class Runner {
 
     static void gameRunner() {
         GameMain.main();
+    }
+
+    static void twoDigitCalcRunner() {
+        TwoDigitCalc.main();
     }
 }

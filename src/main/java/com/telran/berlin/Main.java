@@ -5,15 +5,17 @@ import com.telran.berlin.game.constant.ConsoleColors;
 import java.util.Scanner;
 
 public class Main {
+    public static final Scanner SCANNER = new Scanner(System.in);
     public static void main(String[] args) {
         int taskNo;
-        String[] tasks = new String[5];
+        String[] tasks = new String[6];
 
-        tasks[0] = "— #1 Variables create & print";
-        tasks[1] = "— #2 Cat create & print";
-        tasks[2] = "— #3 Dog create & print";
-        tasks[3] = "— #4 Numbers convertor";
-        tasks[4] = "— #5 Elf game";
+        tasks[0] = "— #0 Elf game";
+        tasks[1] = "— #1 Variables create & print";
+        tasks[2] = "— #2 Cat create & print";
+        tasks[3] = "— #3 Dog create & print";
+        tasks[4] = "— #4 Numbers convertor";
+        tasks[5] = "— #5 Two digit calculator";
 
         System.out.println(ConsoleColors.WHITE_BRIGHT + "\nJava homeworks!" + ConsoleColors.RESET);
 
@@ -22,10 +24,10 @@ public class Main {
         }
 
         try {
-            Scanner sc = new Scanner(System.in);
+//            Scanner sc = new Scanner(System.in);
             System.out.print(ConsoleColors.WHITE_BRIGHT + "Choose task: " + ConsoleColors.RESET);
-            taskNo = sc.nextInt(10);
-            sc.close();
+            taskNo = SCANNER.nextInt(10);
+//            sc.close();
         } catch (Exception ex) {
             System.out.println("\nWrong task No!");
             System.exit(1);
@@ -35,6 +37,9 @@ public class Main {
         System.out.println();
 
         switch (taskNo) {
+            case 0:
+                Runner.gameRunner();  // Elf game
+                break;
             case 1:
                 Runner.varRunner(); // Variables create & print
                 break;
@@ -48,7 +53,7 @@ public class Main {
                 Runner.convertorRunner();  // Number convertor
                 break;
             case 5:
-                Runner.gameRunner();  // Elf game
+                Runner.twoDigitCalcRunner();  // Two digit calculator
                 break;
             default:
                 System.out.println("\nTask #" + taskNo + " isn't ready.");
