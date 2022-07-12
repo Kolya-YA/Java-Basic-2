@@ -1,4 +1,4 @@
-package com.telran.berlin.homeworks;
+package com.telran.berlin.homeworks.extra;
 
 import com.telran.berlin.Main;
 import com.telran.berlin.game.constant.ConsoleColors;
