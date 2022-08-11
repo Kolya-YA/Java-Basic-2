@@ -5,15 +5,13 @@ import com.telran.berlin.Main;
 import java.util.Random;
 
 public class LogicalOperators {
+        private static final Random rnd = new Random();
     public static void main(String[] args) {
-        Random rnd = new Random();
-
-        System.out.println(firstLevel(rnd));
-
-        System.out.println(secondLevel(rnd));
+        System.out.println(firstLevel());
+        System.out.println(secondLevel());
     }
 
-    static String firstLevel(Random rnd) {
+    private static String firstLevel() {
         // I can win when second random number is equal first random number
         // or bigger than half of the first number and is even.
 
@@ -29,10 +27,12 @@ public class LogicalOperators {
             return infoStr + "I'm a looser!";
     }
 
-    static String secondLevel(Random rnd) {
+    static String secondLevel() {
         System.out.print("\nPlease enter number of students: ");
         int numberOfStudents = Main.scanner.nextInt();
-        int rndStudent = rnd.nextInt(numberOfStudents) + 1;
+
+        int rndStudent = rnd.nextInt(numberOfStudents - 1) + 2;
+
         return "Total students: " + numberOfStudents + "\n" + "Random student: " + rndStudent;
     }
 }
