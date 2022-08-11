@@ -25,7 +25,6 @@ public class minKthInArray {
         }
         System.out.print("\b\b.\n\n");
 
-
         System.out.println("5th min value in Array: " + copyOfArr[4]);
         System.out.println("Index of " + copyOfArr[4] + " in original array: " + indexOf5thMin);
     }
