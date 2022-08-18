@@ -1,6 +1,6 @@
 package com.telran.berlin.homeworks.ifSwitchTernary;
 
-public class nameOfSeason {
+public class NameOfSeason {
     static String getNameByIf(int noOfMonth) {
         String preStr = "The name of season by IF operator is: ";
         String seasonName;

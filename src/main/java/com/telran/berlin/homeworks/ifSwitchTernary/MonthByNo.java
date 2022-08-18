@@ -1,6 +1,6 @@
 package com.telran.berlin.homeworks.ifSwitchTernary;
 
-public class monthByNo {
+public class MonthByNo {
     static String getName(int monthNo) {
         String preStr = "The name of month is: ";
         switch (monthNo) {

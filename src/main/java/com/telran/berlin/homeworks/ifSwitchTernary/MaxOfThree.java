@@ -1,6 +1,6 @@
 package com.telran.berlin.homeworks.ifSwitchTernary;
 
-public class maxOfThree {
+public class MaxOfThree {
     static String getMax(int a, int b, int c) {
         int maxByIf;
 
