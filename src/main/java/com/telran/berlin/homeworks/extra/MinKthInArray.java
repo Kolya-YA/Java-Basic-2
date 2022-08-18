@@ -2,7 +2,7 @@ package com.telran.berlin.homeworks.extra;
 
 import java.util.Arrays;
 
-public class minKthInArray {
+public class MinKthInArray {
     public static void main(String[] args) {
         final int K = 4;
         int[] orgArr = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
